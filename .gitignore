@@ -6,3 +6,4 @@ node_modules/
 revel-base/
 npm-debug.log
 logs/
+public/dist/
