@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import bootstrap from 'bootstrap';
+
+import {Component} from 'react';
 
 class Hello extends Component {
     render() {
         return (
-            <h1>hello!</h1>
+            <h1>hello!world!</h1>
         )
     }
 }
