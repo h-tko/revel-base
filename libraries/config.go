@@ -18,7 +18,9 @@ func LoadConfig(confFileName string) (*config.Context, error) {
 		return nil, err
 	}
 
-	conf.SetSection(revel.RunMode)
+	if conf.HasSection(revel.RunMode) {
+		conf.SetSection(revel.RunMode)
+	}
 
 	return conf, nil
 }
