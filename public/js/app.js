@@ -1,16 +1,7 @@
-import bootstrap from 'bootstrap';
-
-import {Component} from 'react';
-
-class Hello extends Component {
-    render() {
-        return (
-            <h1>hello!world!</h1>
-        )
-    }
-}
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import MainView from './components/mainview';
 
 ReactDOM.render(
-    <Hello />,
+    <MainView />,
     document.querySelector('main')
 );

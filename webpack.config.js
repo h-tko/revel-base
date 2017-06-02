@@ -31,7 +31,23 @@ const common = {
             },
             {
                 test: /\.css$/,
-                loaders: "file?name=[name].[ext]",
+                loader: 'style-loader!css-loader',
+            },
+            {
+                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?mimetype=image/svg+xml',
+            },
+            {
+                test: /\.woff(\d+)?(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?mimetype=application/font-woff',
+            },
+            {
+                test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?mimetype=application/font-woff',
+            },
+            {
+                test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'url-loader?mimetype=application/font-woff',
             },
         ],
     },
