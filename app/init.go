@@ -1,6 +1,7 @@
 package app
 
 import (
+	"github.com/cbonello/revel-csrf"
 	"github.com/h-tko/revel-base/app/models"
 	"github.com/revel/revel"
 )
@@ -28,6 +29,7 @@ func init() {
 		revel.InterceptorFilter,       // Run interceptors around the action.
 		revel.CompressFilter,          // Compress the result.
 		revel.ActionInvoker,           // Invoke the action.
+		csrf.CSRFFilter,
 	}
 
 	revel.OnAppStart(models.InitDB)

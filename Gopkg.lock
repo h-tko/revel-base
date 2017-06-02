@@ -9,6 +9,18 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/cbonello/revel-csrf"
+  packages = ["."]
+  revision = "4dd0f3c795bb32e987fe8eea7f13078581ada38d"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/gopherjs/gopherjs"
+  packages = ["js"]
+  revision = "7cde3d36aea3e1b3be7827c4dcbe6bbae73d012e"
+
+[[projects]]
+  branch = "master"
   name = "github.com/jinzhu/gorm"
   packages = [".","dialects/postgres"]
   revision = "9acaa33324bbcc78239a1c913d4f1292c12177b9"
@@ -18,6 +30,12 @@
   name = "github.com/jinzhu/inflection"
   packages = ["."]
   revision = "1c35d901db3da928c72a72d8458480cc9ade058f"
+
+[[projects]]
+  name = "github.com/jtolds/gls"
+  packages = ["."]
+  revision = "8ddce2a84170772b95dd5d576c48d517b22cac63"
+  version = "v4.2.0"
 
 [[projects]]
   branch = "master"
@@ -62,6 +80,18 @@
   revision = "41257a1839e945fce74afd070e02bab2ea2c776a"
 
 [[projects]]
+  name = "github.com/smartystreets/assertions"
+  packages = [".","internal/go-render/render","internal/oglematchers"]
+  revision = "e9a2f6771d97c709b2f7609fdf89ebde8b64c926"
+  version = "1.6.0"
+
+[[projects]]
+  name = "github.com/smartystreets/goconvey"
+  packages = ["convey","convey/gotest","convey/reporting"]
+  revision = "d4c757aa9afd1e2fc1832aaab209b5794eb336e1"
+  version = "1.6.2"
+
+[[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = ["websocket"]
@@ -76,6 +106,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "8d0525c1851d255a55c52803597f999022bf0e537e5beac87031459cea817649"
+  inputs-digest = "b92ac202984275da94752864aa220e0efb677ae7bd727c453b90629b81a942a3"
   solver-name = "gps-cdcl"
   solver-version = 1
