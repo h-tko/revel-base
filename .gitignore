@@ -1,0 +1,7 @@
+test-results/
+tmp/
+routes/
+vendor/
+node_modules/
+revel-base/
+npm-debug.log
